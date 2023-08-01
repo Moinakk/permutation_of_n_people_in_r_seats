@@ -1,0 +1,1 @@
+# permutation_of_n_people_in_r_seats
