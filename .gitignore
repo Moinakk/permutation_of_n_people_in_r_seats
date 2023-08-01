@@ -1,24 +1,22 @@
-# Compiled class file
-*.class
+import java.util.Scanner;
 
-# Log file
-*.log
+class Main{
+    static int Fact(int n){
+        int fact=1;
+        for(int i=1;i<=n;i++) {
+            fact *= i;
+        }
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+        return fact;
+    }
+    public static void main(String[]args){
+        int result=0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of people");
+        int n=sc.nextInt();
+        System.out.println("enter the number of seats");
+        int r = sc.nextInt();
+         result =Fact(n)/Fact(n-r);
+         System.out.println(result);
+    }
+}
